@@ -10,7 +10,7 @@ class MySpider(scrapy.Spider):
     allowed_domains = ["imooc.com"]
     # 填写爬取地址
     start_urls = ["http://www.imooc.com/course/list"]
-
+     # '测试'
     # 编写爬取方法
     def parse(self, response):
         # 实例一个容器保存爬取的信息
