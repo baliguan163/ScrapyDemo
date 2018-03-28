@@ -12,6 +12,7 @@ from proxy.items import ProxyItem
 # parse() 是spider的一个方法。 被调用时，每个初始URL完成下载后生成的 Response 对象将会作为唯一的参数传递给该函数。
 # 该方法负责解析返回的数据(response data)，提取数据(生成item)以及生成需要进一步处理的URL的 Request 对象。
 
+# 西刺免费代理IP http://www.xicidaili.com/
 class DxdlspiderSpider(scrapy.Spider):
     name = 'dxdlspider'
     allowed_domains = ['xicidaili.com']

@@ -18,6 +18,5 @@ class ProxyPipeline(object):
         elif spider.name=='kdlspider':
             #我们直接将传来的addr写入文本
             open('kdl_proxy.txt','a').write(item['addr']+'\n')
-
         return item
 

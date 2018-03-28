@@ -6,11 +6,12 @@ class KdlspiderSpider(scrapy.Spider):
     name = 'kdlspider'
     allowed_domains = ['kuaidaili.com']
     #start_urls = ['http://kuaidaili.com/']
-    start_urls = []
 
+    start_urls = []
     # 通过简单的循环，来生成爬取页面的列表
     # 这里我们爬1~5页
     for i in range(1, 6):
+        # 快代理，国内高匿免费http代理 https://www.kuaidaili.com/free/inha/1
         start_urls.append('http://www.kuaidaili.com/free/inha/' + str(i) + '/')
 
     def parse(self, response):
