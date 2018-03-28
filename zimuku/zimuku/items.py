@@ -10,5 +10,6 @@ import scrapy
 #来定义这个爬虫框架需要爬哪些内容
 class ZimukuItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    subname = scrapy.Field() #字母的名字
+    # subname = scrapy.Field()  # 字母的名字
+    href = scrapy.Field()
+    title = scrapy.Field()

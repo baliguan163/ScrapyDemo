@@ -10,10 +10,8 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = 'zimuku'
-
 SPIDER_MODULES = ['zimuku.spiders']
 NEWSPIDER_MODULE = 'zimuku.spiders'
-
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zimuku (+http://www.yourdomain.com)'
@@ -24,7 +22,7 @@ ROBOTSTXT_OBEY = True
 #只增加了这一行，通过配置告诉Scrapy明白是谁来处理结果
 ITEM_PIPELINES={'zimuku.pipelines.ZimukuPipeline':300,}
 
-
+LOG_LEVEL = 'ERROR'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
